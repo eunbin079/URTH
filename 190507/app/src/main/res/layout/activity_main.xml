@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:gravity="center"
+
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+
+                  android:gravity="center">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars[3]"
+                tools:layout_editor_absoluteY="131dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/imgSignup"/>
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="ID"
+                android:ems="10"
+                android:id="@+id/edtLoginID"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="PW"
+            android:layout_margin="10dp"
+            android:ems="10"
+            tools:layout_editor_absoluteY="390dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/edtLoginPW"/>
+    <Button
+            android:text="Login"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="481dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnLogin"/>
+    <TextView
+            android:text="아직 회원이 아니신가요"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="555dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/txtLogin"/>
+    <TextView
+            android:text="회원가입"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="584dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/txtLoginSignup"/>
+    </LinearLayout>
+</RelativeLayout>
