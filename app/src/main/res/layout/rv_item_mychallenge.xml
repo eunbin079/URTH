@@ -8,9 +8,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
 >
-    <ImageView android:layout_width=""
-               android:layout_height=""
-    />
 
 
 </LinearLayout>
